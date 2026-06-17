@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>IrriPlantae</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="w3.css">
+  <link rel="stylesheet" href="w3-theme-teal.css">
+
+  <!-- Fontes -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- Icones -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- Navegação lateral -->
+  <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
+    <h1 class="w3-xxxlarge w3-text-theme">Opções</h1>
+    <button class="w3-bar-item w3-button" onclick="w3_close()">Fechar
+      <span class="material-symbols-outlined">close</span>
+    </button>
+    <a href="#" class="w3-bar-item w3-button">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button">Link 4</a>
+  </nav>
+
+  <!-- Topo -->
+  <header class="w3-container w3-theme w3-padding" id="topo">
+
+    <i onclick="w3_open()" class="w3-xlarge w3-button w3-theme">
+      <span class="material-symbols-outlined">menu</span>
+    </i>
+    <div class="w3-center">
+      <span class="material-symbols-outlined">psychiatry</span>
+      <h1 class="w3-xxxlarge w3-animate-bottom">IrriPlantae</h1>
+    </div>
+  </header>
+
+  <!--<div class="w3-row-padding w3-center w3-margin-top">
+    <div class="w3-half">
+      <div class="w3-card w3-container" style="min-height:120px">
+        <h3>Status da bomba</h3>
+        <p>Ligada</p>
+      </div>
+    </div>-->
+
+
+    <!--<div class="w3-half">
+      <div class="w3-card w3-container" style="min-height:120px">
+        <h3>Controle manual da bomba</h3>
+        <button class="w3-button w3-large w3-green">Ligar</button>
+        <button class="w3-button w3-large w3-red">Desligar</button>
+      </div>
+    </div>-->
+
+  </div>
+
+  <div class="w3-row-padding w3-center w3-margin-top">
+    <div class="w3-half">
+      <div class="w3-card w3-container" style="min-height:460px">
+        <div class="charts">
+          <div class="charts-card">
+            <h4 class="chart-title"><span class="material-symbols-outlined">
+                humidity_low
+              </span> Umidade atual</h4>
+            <p id="humidade"></p>
+            <div id="grafico_umidade"></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-half">
+      <div class="w3-card w3-container" style="min-height:460px">
+        <div class="charts">
+          <div class="charts-card">
+            <h4 class="chart-title"><span class="material-symbols-outlined">
+                history
+              </span> Histórico de umidade</h4>
+            <div id="grafico_historico_umidade"></div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- Rodapé -->
+  <footer class="w3-container w3-theme-dark w3-center">
+    <p>Feito com <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    <p>IrriPlantae - 2024</p>
+  </footer>
+
+  <!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
+  <script>
+    // Side navigation
+    function w3_open() {
+      var x = document.getElementById("mySidebar");
+      x.style.width = "100%";
+      x.style.fontSize = "40px";
+      x.style.paddingTop = "10%";
+      x.style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+
+  </script>
+
+  <script src="apexcharts.min.js"></script>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
