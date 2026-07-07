@@ -1,4 +1,4 @@
-# IrriPlantae
+# IrrigaPlantae
 
 ## Descrição
 Sistema de Irrigação Automatizado utilizando IoT, desenvolvido como Trabalho de Conclusão de Curso (TCC) do curso de Análise e Desenvolvimento de Sistemas.
